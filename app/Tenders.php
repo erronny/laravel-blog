@@ -1,0 +1,15 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class Tenders extends Model
+{
+    use SoftDeletes;
+
+    protected $table = "tbl_tenders";
+    protected $guarded = [];
+    
+}
